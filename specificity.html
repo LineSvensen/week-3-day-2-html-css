@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Specificity</title>
+    <style>
+
+        .header {
+            /*0, 1, 0, 0*/
+            #header-id {
+                color: blue;
+            }
+            /*0, 0, 1, 0*/
+            color: green;
+            }
+            /*0, 0, 0, 1*/
+            h2 {
+            color: red;
+            }
+            /* !important, id, class, tag ...<-- more dominant....DONT USE !important */
+            0,    0,     0
+
+            #header-id span {
+                color: green;
+            }
+
+    </style>
+</head>
+<body>
+    <h2 id="header-id" class="header">
+        <span>
+        Some text blabal Some text blabal Some text blabal
+        Some text blabal Some text blabal Some text blabal
+        Some text blabal Some text blabal Some text blabal
+        </span>
+    </h2>
+    <p id="paragraph-id" class="paragraph">
+        Some text blabal Some text blabal Some text blabal
+        Some text blabal Some text blabal Some text blabal
+        Some text blabal Some text blabal Some text blabal
+        Some text blabal Some text blabal Some text blabal
+        Some text blabal Some text blabal Some text blabal
+        Some text blabal Some text blabal Some text blabal
+    </p>
+
+</body>
+</html>

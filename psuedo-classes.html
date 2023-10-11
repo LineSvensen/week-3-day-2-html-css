@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>:: Psuedo classes ::</title>
+    <style>
+        }
+        button:hover {
+            background-color: red;
+        }
+        button:focus {
+            background-color: blue;
+            /*when you click it will be blue*/
+        }
+        #email-disabled {
+            background-color: grey;
+        }
+        #name:required {
+            background-color: yellow;
+        }
+        /*chooses 2-4-6 etc.. same as 2n..*/
+        li:nth-child(even) {
+            background-color: green;
+        }
+        li:nth-child(odd) {
+            background-color: lightgreen;
+        }
+        /*i want to select every second child. Same as -even-*/
+        li:nth-child(2n) {
+            background-color: deeppink;
+        }
+        /*if you want to skip the first one
+        li:nth-child(2n + 1) {
+            background-color: deeppink;
+        }
+        */
+
+    </style>
+</head>
+<body>
+    <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" disabled/>
+    </div>
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" required/>
+    </div>
+    <button type="submit" class="submit">Click me</button>
+
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+    </ul>
+
+</body>
+</html>
